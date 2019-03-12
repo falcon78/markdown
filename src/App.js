@@ -51,7 +51,7 @@ export default App;
 
 function Parse(props) {
   let output = props.input;
-  output = output.replace(/[\*\_]{2}([^\*\_]+)[\*\_]{2}/g, "<b>$1</b>");
+  output = output.replace(/[\*]{2}([^\*]+)[\*]{2}/g, "<b>$1</b>");
   output = output.replace(/[\#]{1}(.+)/g, "<h1>$1</h1>");
   output = output.replace(
     /[\[]{1}([^\]]+)[\]]{1}[\(]{1}([^\)\"]+)(\"(.+)\")?[\)]{1}/g,
